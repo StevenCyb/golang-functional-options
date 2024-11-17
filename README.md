@@ -2,6 +2,14 @@
 
 The Functional Options Pattern in Go (Golang) is a design pattern that enables flexible and readable object or function configuration. By defining functions (options) that modify the attributes or behavior of a struct during its initialization, this pattern allows customization without the need for numerous constructors. It simplifies handling optional parameters, avoids bulky struct definitions, and keeps code clean and maintainable. This approach promotes a declarative and extensible configuration style.
 
+
+- [Golang Functional Options Pattern](#golang-functional-options-pattern)
+	- [Traditional Constructor Method](#traditional-constructor-method)
+	- [Multiple Constructors for Each Configuration Variant](#multiple-constructors-for-each-configuration-variant)
+	- [Using a Custom Config Struct](#using-a-custom-config-struct)
+	- [Setter Function Pattern](#setter-function-pattern)
+	- [Functional Options Pattern](#functional-options-pattern)
+
 ## Traditional Constructor Method
 
 A common way to initialize an object in Go is through a constructor function that explicitly defines required and optional parameters. Here's an example:
